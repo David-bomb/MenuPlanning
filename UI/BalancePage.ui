@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>BalancePage</class>
+  <widget class="QDialog" name="BalancePage">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1200</width>
+        <height>600</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>Баланс ингредиентов</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+        <widget class="QTableWidget" name="tableWidget">
+          <column>
+            <property name="text">
+              <string>Ингредиент</string>
+            </property>
+          </column>
+          <column>
+            <property name="text">
+              <string>Требуется</string>
+            </property>
+          </column>
+          <column>
+            <property name="text">
+              <string>На складе</string>
+            </property>
+          </column>
+          <column>
+            <property name="text">
+              <string>Баланс</string>
+            </property>
+          </column>
+        </widget>
+      </item>
+      <item>
+        <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+            <widget class="QLabel" name="label">
+              <property name="text">
+                <string>Фильтр по ингредиенту:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="0" column="1">
+            <widget class="QComboBox" name="cb_ingredient"/>
+          </item>
+          <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+              <property name="text">
+                <string>Дата планирования:</string>
+              </property>
+            </widget>
+          </item>
+          <item row="1" column="1">
+            <widget class="QComboBox" name="cb_date"/>
+          </item>
+        </layout>
+      </item>
+      <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+            <widget class="QPushButton" name="btn_calculate">
+              <property name="text">
+                <string>Рассчитать</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="btn_export">
+              <property name="text">
+                <string>Экспорт в PDF</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="btn_close">
+              <property name="text">
+                <string>Закрыть</string>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+    </layout>
+  </widget>
+  <resources/>
+  <connections/>
+</ui>
