@@ -135,3 +135,4 @@ class AdminsPage(QDialog):
 
         except psycopg2.Error as e:
             QMessageBox.critical(self, "Ошибка", f"Ошибка удаления: {str(e)}")
+            self.db_connection.rollback()
